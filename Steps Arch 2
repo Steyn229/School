@@ -1,0 +1,408 @@
+# Week 5
+#Step 01: 
+# 1
+# parameters are the variables inside the brackets of the definition of the function. Arguments are the variables you pass through the function when you call it.
+# -------------------------
+# 2
+# def Say_hello(): --> define the function
+    # return "hello"
+# print(Say_hello()) --> call the function 
+# -------------------------
+# 3
+# def give_text(text):
+#     return text
+# text = input()
+# print(give_text(text))
+# ------------------------
+# 4
+# def add_numbers(n1 , n2):
+#     sum = n1 + n2
+#     return sum
+# n1 = 9
+# n2 = 10
+# print(add_numbers(n1 , n2))
+# ------------------------
+# 5 
+# def number_one(n1):
+#     sum = n1 * 2
+#     return sum
+# def number_two(n2):
+#     sum = n2 * 10
+#     return sum
+# n1 = int(input())
+# n2 = int(input())
+# number_one(n1)
+# number_two(n2)
+# print(number_one(n1) + number_two(n2))
+# ------------------------
+# 6 
+# def print_hello():
+#     return "hello"
+
+# def print_bye(): 
+#     return "bye"
+
+# input = int(input("give a number"))
+# if input > 10:
+#     print(print_hello())
+# elif input <= 10: 
+#     print(print_bye())
+# -------------------------
+# 7
+# def print_hello():
+#     print("hello")
+#     print_bye()
+
+# def print_bye(): 
+#     print("bye")
+
+# print_hello()
+# -------------------------
+# Step 02
+# -------------------------
+# 1
+# The adventage of using different type of elements in a tuple are that you can make your tuple as complex as you want. You can also use tuples as key for dictionary.
+# the disadventages of tuples are that tuples are immutable.
+# --------------------------
+# 2 
+# empty_tuple = (1 , 2 , 3)
+# print(empty_tuple[-1])
+# --------------------------
+# 3 
+# d_tuple = (3 ,5)
+# s_tuple = ("hihi" , "balon")
+# n_tuple = d_tuple + s_tuple
+# print(n_tuple)
+# --------------------------
+# 4
+# number_tuples = (2 , 4 ,6)
+# n_tuple = tuple(2 * item for item in number_tuples)
+# print(n_tuple)
+# --------------------------
+# 5 
+# def tuple_example(): 
+#     tupletuple = ("hmmm" , "goed gedaan" , "balon")
+#     return tupletuple
+
+# print(tuple_example())
+# --------------------------
+# 6
+# a_tuple = ('Never', 'gonna', 'give', 'you', 'up')
+# counter = 0
+# for x in a_tuple:
+#     if x[0] ==  'g':
+#         counter = counter + 1
+#     else:
+#         counter = counter + 2
+# print(counter)
+# def do_something(x):
+#     rtuple = x,
+#     for i in range(2,11):
+#         rtuple = rtuple + ((x*i),)
+#     return rtuple
+# print(do_something(6))
+# -------------------------
+# step 03
+# -------------------------
+# 1
+# score_list = [1,4,6,6,6,7,8,9,]
+# print(min(score_list))
+# print(max(score_list))
+# 2
+# score_list = [1,4,6,6,6,7,8,9,]
+# Grootste = max(score_list)
+# score_list.remove(Grootste)
+# EGrootste = max(score_list)
+# kleinste = min(score_list)
+# score_list.remove(kleinste)
+# EKleinste = min(score_list)
+# print(Grootste , EGrootste , kleinste , EKleinste)
+# # copy_score_list = score_list [:]
+# # Grootste = max(copy_score_list)
+# # copy_score_list.remove(Grootste)
+# # EGrootse = max(copy_score_list)
+# # print(Grootste , EGrootse)
+# --------------------------
+# 3 
+# wannabelist = input("enter list of integers")
+# wannabelist = list(wannabelist)
+# # # print(len(wannabelist))
+# # # print(wannabelist[-1])
+# # # reversed_list = wannabelist[::-1]
+# # # print(reversed_list)
+# # # if "5" in wannabelist:
+# # #     print("yes")
+# # duplicate_list = []
+# # for x in wannabelist:
+# #     if x == "5":
+# #         duplicate_list.append(x)
+
+# # # print(len(duplicate_list))
+# # wannabelist = wannabelist[1:-1]
+# # sorted_wannabe = sorted(wannabelist)
+# # print(sorted_wannabe)
+# interger_count = []
+# for x in wannabelist:
+#     if x <= 5:
+#         interger_count.append(x)
+# print(interger_count)
+# ----------------------
+# 4 
+# Write a program that generates a list of 20 random numbers between 1 and 100.
+# Print the list.
+# Print the average of the elements in the list.
+# Print the largest and smallest values in the list.
+# Print the second largest and second smallest entries in the list
+# Print how many even numbers are in the list.
+# import random
+# RandomList = []
+# for i in range(0 , 20): 
+#     Random = random.randint(1,100)
+#     RandomList.append(Random)
+# EvenList = []
+# for x in RandomList:
+#     if x % 2 == 0:
+#         EvenList.append(x)
+# OrderdList = sorted(EvenList)
+# OrderdRandom = sorted(RandomList)
+# print(OrderdList)
+# print(OrderdRandom)
+# -------------------------
+# 5
+# StartList = [8,9,10]
+# StartList[1] = 17
+# StartList.extend([4,5,6])
+# StartList.remove(8)
+# Sorted_List = sorted(StartList)
+# Sorted_2 = Sorted_List.copy()
+# Sorted_List.extend(Sorted_2)
+# Sorted_List.insert(3,25)
+# print(Sorted_List)
+# -------------------------
+# 6
+# Create the following lists using a loop.
+# A list consisting of the integers 0 through 49
+# A list containing the squares of the integers 1 through 50.
+# The list ['a','bb','ccc','dddd', . . . ] that ends with 26 copies of the letter z.
+# List = []
+# for i in range(1 , 27):
+#     List.append(chr(i + 96) * i)
+# print(List)
+# -------------------------
+# 7
+# L = [2,4,5]
+# M = [3,5,6]
+# N = [L + M for L,M in zip(L,M)]
+# print(N)
+
+Week 6 
+#_---------
+# Step01
+# -----------------
+# 2
+# dict = {"firstname" : "Larry" , "lastname": "Page"}
+# print(dict["lastname"])
+# -----------------
+# 3 
+# Create a dictionary with the following pairs "brand": "Ford", "model": "Mustang", "year": 1964.
+# Print all the values from the distionary.
+# Print all the keys from the dictionary.
+# Print the length of the dictionary.
+# Add "color": "Red" and remove the pair with key = "year". Print keys and values separately.
+# dict = {"brand": "Ford", "model": "Mustang", "year": 1964}
+# print(list(dict.values()))
+# print(list(dict.keys()))
+# print(len(dict))
+# dict["color"] = "Red"
+# dict.pop("year")
+# print(dict)
+# -----------------
+# step 02
+# -----------------
+# 2
+# Create a function that takes an *args of numbers as argument, which calculates the sum of all numbers and returns the result. Call the function and print the returned value.
+# def arg_function(*arg):
+#     return sum(arg)
+# print(arg_function(1,2,3,4,5,6,7,8,9))
+# ------------------
+# 3
+# def count_passes(**kwargs): 
+#     count = 0 #Complete this function to count the number of passes
+#     for value in kwargs.items():
+#         if value == "Fail":
+#             count += 1
+#     return count
+
+# result = count_passes(math="Fail", science="Fail", history="Pass", english="Pass") 
+# print(result) 
+# -------------------
+# 4 
+# def do_something(*args, **kwargs): 
+#     for i in args: 
+#         for key, value in kwargs.items(): 
+#             if i == key: 
+#                 print(value)
+
+# do_something("a", "z", "d", "b", a=1, b=2, c=3, d=4)
+# ---------------------
+# step 03
+# ---------------------
+# 1
+# Create a set with and fill it with some values you can think of yourself. Print the length and the last value from the set.
+# sad_set = set(["broodje pindakaas" , "lol" , "jammer weer" ])
+# print(len(sad_set))
+# sad_set = list(sad_set)
+# print(sad_set[-1])
+# ----------------------
+# 2
+# Create a function which takes a dictionary as argument and returns a set created from the values of the given dictionary. 
+# Call the function and print all values from the returned set.
+# def convert(Dict):
+#     set1 = set()
+#     for i in dict.values(Dict):
+#         set1.update(i)
+#     return set1
+# Dict = {"Balon" : "rood" , "bal" : "blauw" , "appel" : "rood"}
+# print(convert(Dict))
+# -------------------------  
+# 3 
+# letter_set =set("xyqzu")
+# Letter = input("give a letter")
+# if Letter in letter_set:
+#     print("yes")
+# else:
+#     print("no")
+# ------------------------
+# 4
+# sfind = set('orihme') 
+# schar = set('ichgo') 
+# print("Step 1:") 
+# for i in sfind: 
+#     if i in schar: 
+#         print(i)
+# print("Step 2:") 
+# schar.update(sfind) 
+# for i in schar: 
+#     print(i)§§§§§§ 
+---------------------
+week 7
+
+# excersises - 00
+# r = lambda a : a + 15
+# print(r(10))
+# r = lambda x, y : x * y
+# print(r(12, 4))
+#-----------------
+# 01(1)
+# even = lambda x : x % 2 == 0
+# print(even(4))
+# print(even(13))
+# ----------------------------
+#01(2)
+# Testlist = [1,2,3,4,5,6,7,8,9,10]
+# even = []
+# odd = [] 
+# for x in Testlist:
+#     y = lambda y : y % 2 == 0
+#     if y(x):
+#         even.append(x)
+#     else:
+#         odd.append(x)
+
+# print(even)
+# print(odd)
+# -----------------------------
+# 03()
+# def am_i_sorted(numberlist):
+#     if numberlist == sorted(numberlist , key=lambda y : y):
+#         return True
+#     else:
+#         return False
+
+
+# result = am_i_sorted([1,2,5,6,8,17])
+# print(result) #True
+# result = am_i_sorted([1,2,99,6,8,17])
+# print(result) #False
+# ----------------------------
+# 04
+# rand = lambda x , y : (x , y)
+# print(rand("kaas" , "hmmmm"))
+# ----------------------------
+# 05
+# def check_with_lambda(l, lam):
+#     list = []
+#     for i in lam:
+#         if l(i):
+#             list.append(i)
+#     return list
+# x = lambda a : a < 10
+# y = [1,6,19,22,7]
+# print(check_with_lambda(x, y)) #[1,6,7]
+# x = lambda a : a[1] == 'b'
+# y = ["abc", "bcd", "ube", "cur"]
+# print(check_with_lambda(x, y)) #["abc","ube"]
+# -----------------------------
+# Step 02
+# -----------------------------
+# 01
+# list = [1,5,3,7,9,4,33]
+# list.sort(reverse= True)
+# print(list)
+# -----------------------------
+# 02
+# list = [(3,4,5) , (6,7,8) , (9,10,11)]
+# list2 = [x[2] for x in list]
+# print(list2)
+# ------------------------------
+# 03
+# def create_list_from_tuples(a):
+#     a = (1,5,4) + (1,2) + (8,5,19,0)
+#     N_l = list(a)
+#     return N_l
+# l = [(1,5,4),(1,2),(8,5,19,0)]
+# print(create_list_from_tuples(l))
+# #[1,5,4,1,2,8,5,19,0]
+# ------------------------------
+# 04
+# l = [(1,5,4),(1,2),(8,5,19,0)]
+# l.sort(reverse=True)
+# print(l)
+# ------------------------------
+# 05
+# even = []
+# odd = []
+# for i in range(0 , 10):
+#     i += 1
+#     if i % 2 == 0:
+#         even.append(i)
+#     else:
+#         odd.append(i)
+    
+# tuple(even)
+# tuple(odd)
+# list = list(zip(odd, even))
+# print(list)
+# --------------------------------
+# 06
+# Take the list from the previous exercise. Remove the tuples in which the first item is an odd number. Use a lambda to determine this.
+# list = [(1,5,4),(1,2),(8,5,19,0)]
+# list2 = [i for i in list if i[0] % 2 == 0]
+# print(list2)
+# --------------------------------
+# step 03
+# a = ['a', 'b', ['c', 'd']]
+# b = a.copy()
+# b[2][0] = 'z'
+# a[2][0] = 'x'
+# print(b[2][0])
+
+
+import random
+
+x = random.randint(0,131)
+
+print(x)
+
+
+
